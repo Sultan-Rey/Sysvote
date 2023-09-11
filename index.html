@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html>
+    <head>  
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <link rel="stylesheet" href="css/css_one.css">
+        <!-- End layout styles -->
+        <link rel="shortcut icon" href="images/favicon.png" />
+        <title>SYSVOTE | PPPD</title>
+    </head>
+    <body>
+        
+        <div class="content-background">
+            
+        </div>
+        <div class="header">
+            <h2>SYSVOTE</h2>
+            <h3>REPUBLICAIN PARTY OF UNITED STATES</h3>
+            <div class="line"></div>
+        </div>
+<div class="container">
+  <div class="box"></div>
+  <div class="container-forms">
+    <div class="container-info">
+      <div class="info-item">
+        <div class="table">
+          <div class="table-cell">
+            <p>
+              The vote first ?
+            </p>
+            <div id="catch" class="btn">
+              Back
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="info-item">
+        <div class="table">
+          <div class="table-cell">
+            <p>
+              more than a voter ? 
+            </p>
+            <div  class="btn">
+              Get In
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+      
+         <div class="container-form">
+        <div id="header">
+                 <h2 id="time">The vote start soon</h2>
+                 <h3 id="msg"></h3>
+                 <label>get connected below </label>
+                 <img  src="images/arrow-down.gif" alt="arrow-down"  style="width: 100%; height:25%;"/>
+            </div>
+            
+                   
+     
+             <form onsubmit="voteForm();" method="POST">
+      <div class="form-item log-in">
+          
+        <div id="member" class="table">
+          <div class="table-cell">
+              <input  name="nipd" id="inputNipd" style="text-align: center;" placeholder="Member ID for the party"  required />
+               <input  name="acces" id="inputCode" style="text-align: center;" placeholder="Access code as member" type="Password" required/>
+             <button  class="btn">
+               Validate
+            </button>
+          </div>
+        </div>
+      </div>
+                  </form>
+             <form onsubmit="adminForm();" method="POST">
+                <div class="form-item sign-up">
+        <div class="table">
+          <div  class="table-cell">
+          <input name="username" id="usr" placeholder="Username" type="text" /><input id="pwd"name="password" placeholder="Password" type="Password" />
+          <button id="btn" type="submit" class="btn">
+             Connexion  
+          </button>
+          </div>
+        </div>
+      </div>  
+             </form>
+     
+    </div> 
+     
+    
+  </div>
+</div>
+          <script src="plugins/jquery/jquery.min.js"></script>
+          <script type="text/javascript">
+            var msg = -1;
+             function voteForm(){
+              var nipd = document.getElementById("inputNipd");
+              var access = document.getElementById("inputCode");
+              if(nipd.value =='123456' && access.value=="vote"){
+                localStorage.setItem("logvote",1);
+                
+              }else{
+                alert('Member ID or Access code invalid. If you cannot connect please contact an admin');
+              }
+             }
+             function adminForm(){
+              var user = document.getElementById("usr");
+              var pass= document.getElementById("pwd");
+             
+              if(user.value =='admin' && pass.value=='pass'){
+                localStorage.setItem("logvote",0);
+              }else{
+                alert('Password or username invalid. please retry');
+              }
+             }
+             $(document).ready(function(){
+              window.confirm("To connect as voters use credential : [ID : 123456 | Access code : vote] To connect as system admin use : [Username : admin | Password : pass]  **CASE SENSITIVE**");
+             var countDownDate = localStorage.getItem("countdown");
+             var logvote = localStorage.getItem("logvote");
+                  if(logvote ==1){
+                    window.location="../web/pages/scrutin/vote.html";
+                  }else if(logvote==0){
+                    window.location="../web/pages/homepage/home.html"
+                  }
+               
+                if(countDownDate == 1){
+                    var x;
+ 
+     // Get today's date and time
+  var now = new Date().getTime(); 
+   
+var countDownDate = now + (60*60*24*1000);
+// Update the count down every 1 second
+ x = setInterval(function() {
+
+  var currentTime = new Date().getTime();  
+  // Find the distance between now and the count down date
+  var distance = countDownDate - currentTime ;
+  
+  // Time calculations for days, hours, minutes and seconds
+  var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+  var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+  var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+  var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+  // Display the result in the element with id="demo"
+     document.getElementById("time").innerHTML = hours + " Hrs " + minutes + " Mn "+ seconds + " S ";
+//  + minutes + "m " + seconds + "s ";
+     document.getElementById("msg").innerHTML = " Avant la fin du scrutin en cours ";
+// set notification at 1 second left
+    if(distance ===1000){
+        alert('Le scrutin se termine dans exactement 1e minutes');
+    }
+    
+  // If the count down is finished, write some text
+  if (distance <= 0) {
+    clearInterval(x);
+    document.getElementById("time").innerHTML = "Le scrutin commence bientot";
+    document.getElementById("msg").innerHTML = "";
+      var fromNow = new Date(Date.now());
+                var dateformat = fromNow.getFullYear()+'-'+(fromNow.getMonth()+1)+'-'+fromNow.getDate();
+ 
+      }
+ 
+}, 1000);
+    
+                    
+                }else{
+                  document.getElementById("hr").innerHTML = "00"; 
+     document.getElementById("min").innerHTML = "00";
+     document.getElementById("sec").innerHTML = "59";
+                }
+            }); 
+          </script>
+ <script src="js/js_one.js"></script>
+  
+    </body>
+</html>
