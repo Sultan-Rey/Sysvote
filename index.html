@@ -97,7 +97,7 @@
               var access = document.getElementById("inputCode");
               if(nipd.value =='123456' && access.value=="vote"){
                 localStorage.setItem("logvote",1);
-                
+                window.location="../Sysvote/pages/scrutin/vote.html";
               }else{
                 alert('Member ID or Access code invalid. If you cannot connect please contact an admin');
               }
@@ -108,6 +108,7 @@
              
               if(user.value =='admin' && pass.value=='pass'){
                 localStorage.setItem("logvote",0);
+                   window.location="../Sysvote/pages/homepage/home.html"
               }else{
                 alert('Password or username invalid. please retry');
               }
