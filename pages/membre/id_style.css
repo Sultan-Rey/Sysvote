@@ -1,0 +1,59 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : May 25, 2021, 10:08:39 PM
+    Author     : USER
+*/
+
+
+#card-info #info {
+    position : absolute;
+    display: inline-block;
+    margin-left: 296px;
+    margin-top: 258px;
+}
+#card-info #info h6{
+    color: yellow;
+    margin:0;
+    padding-left: 2px;
+    padding: 2px;
+}
+ #info .advance{
+    padding-left: 5px;
+}
+#card-info #name{
+   position : absolute;
+    display: inline-block; 
+     margin-top: 190px;
+     padding-right: 0;
+     margin-left: 205px;
+     width: 210px;
+     height: 60px;
+      color: yellow;
+      font-size: 28px;
+      font-family: 'Times New Roman', cursive;
+      overflow: hidden;
+}
+#card-info #picture{
+    position : absolute;
+    display: inline-block;
+    width: 120px;
+    height: 120px;
+    float: left;
+    margin-top: 199px;
+    margin-left: 74px;
+}
+#card-info #barcode{
+   position : absolute;
+   display: block;
+   margin-top: 363px;
+   margin-left: 88px;
+   font-size: 12px;
+   color: #000000;
+}
+
+
+

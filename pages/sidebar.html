@@ -1,0 +1,165 @@
+
+<!DOCTYPE html>
+<aside class="mdc-drawer mdc-drawer--dismissible mdc-drawer--open">
+      <div class="mdc-drawer__header">
+        <a href="../homepage/home.html" class="brand-logo">
+            <img src="<%=avatar%>"  class="img-circle img-thumbnail bg-teal" alt="" Width="40" height="40">
+        </a>
+      </div>
+      <div class="mdc-drawer__content">
+          
+        <div class="user-info">
+          <p class="name">Renald Dewar's</p>
+          <p class="email">dewars@voter.com</p>
+        </div>
+        
+        <div class="mdc-list-group">
+          <nav class="mdc-list mdc-drawer-menu">
+            <div class="mdc-list-item mdc-drawer-item">
+              <a class="mdc-drawer-link" href="../scrutin/vote.html">
+                <i class="material-icons mdc-list-item__start-detail mdc-drawer-item-icon" aria-hidden="true">home</i>
+                Tableau de bord
+              </a>
+            </div>
+        
+            <div class="mdc-list-item mdc-drawer-item">
+              <a class="mdc-expansion-panel-link" href="#" data-toggle="expansionPanel" data-target="submenu-member">
+                <i class="material-icons mdc-list-item__start-detail mdc-drawer-item-icon" aria-hidden="true">people</i>
+                Gestion Membres
+                <i class="mdc-drawer-arrow material-icons">chevron_right</i>
+              </a>
+              <div class="mdc-expansion-panel" id="submenu-member">
+                <nav class="mdc-list mdc-drawer-submenu">
+                    
+                  <div class="mdc-list-item mdc-drawer-item">
+                    <a class="mdc-drawer-link" href="../membre/enregistrermembre.jsp">
+                      Enregistrer Membre
+                    </a>
+                  </div>
+                 
+                    <div class="mdc-list-item mdc-drawer-item">
+                        <a class="mdc-drawer-link" href="../membre/partisan.jsp">
+                      Afficher Membres
+                    </a>
+                  </div>
+                </nav>
+              </div>
+            </div>
+                 
+               <div class="mdc-list-item mdc-drawer-item">
+              <a class="mdc-expansion-panel-link" href="#" data-toggle="expansionPanel" data-target="submenu-votant">
+                <i class="material-icons mdc-list-item__start-detail mdc-drawer-item-icon" aria-hidden="true">thumbs_up_down</i>
+                Votants
+                <i class="mdc-drawer-arrow material-icons">chevron_right</i>
+              </a>
+              <div class="mdc-expansion-panel" id="submenu-votant">
+                <nav class="mdc-list mdc-drawer-submenu">
+                  <div class="mdc-list-item mdc-drawer-item">
+                    <a class="mdc-drawer-link" href="../congregation/votant.jsp">
+                     Votants Agrees
+                    </a>
+                  </div>
+                  
+              </div>
+            </div>
+               
+            <div class="mdc-list-item mdc-drawer-item">
+              <a class="mdc-expansion-panel-link" href="#" data-toggle="expansionPanel" data-target="submenu-candidat">
+                <i class="material-icons mdc-list-item__start-detail mdc-drawer-item-icon" aria-hidden="true">person</i>
+                Candidats
+                <i class="mdc-drawer-arrow material-icons">chevron_right</i>
+              </a>
+              <div class="mdc-expansion-panel" id="submenu-candidat">
+                <nav class="mdc-list mdc-drawer-submenu">
+                    
+                   
+                    <div class="mdc-list-item mdc-drawer-item">
+                        <a class="mdc-drawer-link" href="../candidature/listecandidat.jsp">
+                      Afficher Candidat
+                    </a>
+                  </div>
+                    <div class="mdc-list-item mdc-drawer-item">
+                        <a class="mdc-drawer-link" href="../candidature/candidat_1.jsp">
+                       Enregistrer Candidat
+                    </a>
+                  </div>
+                </nav>
+              </div>
+            </div>
+                          <div class="mdc-list-item mdc-drawer-item">
+              <a class="mdc-expansion-panel-link" href="#" data-toggle="expansionPanel" data-target="submenu-vote">
+                <i class="material-icons mdc-list-item__start-detail mdc-drawer-item-icon" aria-hidden="true">thumbs_up_down</i>
+                Scrutin
+                <i class="mdc-drawer-arrow material-icons">chevron_right</i>
+              </a>
+              <div class="mdc-expansion-panel" id="submenu-vote">
+                <nav class="mdc-list mdc-drawer-submenu">
+                 
+                  <div class="mdc-list-item mdc-drawer-item">
+                    <a class="mdc-drawer-link" href="../scrutin/vote.jsp">
+                      Voter
+                    </a>
+                  </div>
+                                    <div class="mdc-list-item mdc-drawer-item mdc-drawer-menu">
+                    <a class="mdc-drawer-link mdc-drawer-menu" href="#">
+                      Resultats <i class="mdc-drawer-arrow material-icons">chevron_right</i>
+                    </a>
+                          <nav class="mdc-list " id="menu-result" >
+                              <div class="mdc-list-item mdc-drawer-item">
+                                  <a class="mdc-drawer-link" href="../scrutin/resultats_presidentiel.jsp">
+                                      Presidentiels
+                                  </a>
+                              </div>
+                               <div class="mdc-list-item mdc-drawer-item">
+                                  <a class="mdc-drawer-link" href="../scrutin/resultats_senatorial.jsp">
+                                      Senatoriales
+                                  </a>
+                              </div> 
+                                <div class="mdc-list-item mdc-drawer-item">
+                                  <a class="mdc-drawer-link" href="../scrutin/resultats_deputation.jsp">
+                                      Deputation
+                                  </a>
+                              </div> 
+                          </nav>
+                     
+                  </div>
+                </nav>
+              </div>
+            </div>
+                
+            <div class="mdc-list-item mdc-drawer-item">
+              <a class="mdc-drawer-link" href="../statistiques/stats.jsp">
+                <i class="material-icons mdc-list-item__start-detail mdc-drawer-item-icon" aria-hidden="true">pie_chart_outlined</i>
+                Statistics
+              </a>
+            </div>
+                     <div class="mdc-list-item mdc-drawer-item">
+              <a class="mdc-expansion-panel-link" href="#" data-toggle="expansionPanel" data-target="submenu-settings">
+                <i class="material-icons mdc-list-item__start-detail mdc-drawer-item-icon" aria-hidden="true">settings</i>
+                Parametres
+                <i class="mdc-drawer-arrow material-icons">chevron_right</i>
+              </a>
+              <div class="mdc-expansion-panel" id="submenu-settings">
+                <nav class="mdc-list mdc-drawer-submenu">
+                    
+                  <div class="mdc-list-item mdc-drawer-item">
+                    <a class="mdc-drawer-link" href="../administration/adduser.jsp">
+                      Creer Utilisateurs
+                    </a>
+                  </div>
+                  <div class="mdc-list-item mdc-drawer-item">
+                    <a class="mdc-drawer-link" href="../administration/userlist.jsp">
+                      Afficher Utilisateurs
+                    </a>
+                  </div>
+                  
+                </nav>
+              </div>
+            </div>
+          </nav>
+        </div>
+        <div class="profile-actions">
+          <a href="../../index.html">Deconnexion</a>
+      
+      </div>
+    </aside>

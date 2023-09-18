@@ -1,0 +1,645 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>SYSVOTE | MEMBRE</title>
+  <!-- plugins:css -->
+  <link rel="stylesheet" href="../assets/vendors/mdi/css/materialdesignicons.min.css">
+  <link rel="stylesheet" href="../assets/vendors/css/vendor.bundle.base.css">
+  <!-- endinject -->
+  <!-- Plugin css for this page -->
+  <!-- End plugin css for this page -->
+  <!-- Layout styles -->
+  <link rel="stylesheet" href="../assets/css/demo/style.css">
+    <!-- Bootstrap Core Css -->
+    <link href="../../plugins/bootstrap/css/bootstrap.css" rel="stylesheet">
+  <!-- Custom Css -->
+    <link href="../../css/style.css" rel="stylesheet">
+  <!-- End layout styles -->
+  <link rel="shortcut icon" href="../../images/favicon.png" />
+</head>
+<body>
+         <style>
+        
+          #form_validation #myNipd{
+              width: 12%;
+              height: 10px; 
+              color: white; 
+              background:transparent; 
+              border: none;
+              box-shadow: none;
+          }
+          #form_validation #pic{
+              width: 16%;
+              height: 16px; 
+              border:none;
+              box-shadow: none;
+              position: absolute;
+              top: 21%;
+              margin-left: 16px;
+          }
+      </style>
+<script src="../assets/js/preloader.js"></script>
+  <div class="body-wrapper">
+    <!-- partial:../../partials/_sidebar.html -->
+    <aside class="mdc-drawer mdc-drawer--dismissible mdc-drawer--open">
+      <div class="mdc-drawer__header">
+        <a href="../homepage/home.html" class="brand-logo">
+            <img src="../../images/001-man.png"  class="img-circle img-thumbnail bg-teal" alt="" Width="40" height="40">
+        </a>
+      </div>
+      <div class="mdc-drawer__content">
+          
+        <div class="user-info">
+          <p class="name">Renald Dewar's</p>
+          <p class="email">dewars@voter.com</p>
+        </div>
+        
+        <div class="mdc-list-group">
+          <nav class="mdc-list mdc-drawer-menu">
+            <div class="mdc-list-item mdc-drawer-item">
+              <a class="mdc-drawer-link" href="../homepage/home.html">
+                <i class="material-icons mdc-list-item__start-detail mdc-drawer-item-icon" aria-hidden="true">home</i>
+                DASHBOARD
+              </a>
+            </div>
+        
+            <div class="mdc-list-item mdc-drawer-item">
+              <a class="mdc-expansion-panel-link" href="#" data-toggle="expansionPanel" data-target="submenu-member">
+                <i class="material-icons mdc-list-item__start-detail mdc-drawer-item-icon" aria-hidden="true">people</i>
+                Membership
+                <i class="mdc-drawer-arrow material-icons">chevron_right</i>
+              </a>
+              <div class="mdc-expansion-panel" id="submenu-member">
+                <nav class="mdc-list mdc-drawer-submenu">
+                    
+                  <div class="mdc-list-item mdc-drawer-item">
+                    <a class="mdc-drawer-link" href="../membre/enregistrermembre.html">
+                      Add members
+                    </a>
+                  </div>
+                 
+                    <div class="mdc-list-item mdc-drawer-item">
+                        <a class="mdc-drawer-link" href="../membre/partisan.html">
+                      Display members
+                    </a>
+                  </div>
+                </nav>
+              </div>
+            </div>
+                 
+               <div class="mdc-list-item mdc-drawer-item">
+              <a class="mdc-expansion-panel-link" href="#" data-toggle="expansionPanel" data-target="submenu-votant">
+                <i class="material-icons mdc-list-item__start-detail mdc-drawer-item-icon" aria-hidden="true">thumbs_up_down</i>
+                Voters
+                <i class="mdc-drawer-arrow material-icons">chevron_right</i>
+              </a>
+              <div class="mdc-expansion-panel" id="submenu-votant">
+                <nav class="mdc-list mdc-drawer-submenu">
+                  <div class="mdc-list-item mdc-drawer-item">
+                    <a class="mdc-drawer-link" href="../congregation/votant.html">
+                     Voters Accepted
+                    </a>
+                  </div>
+                  
+              </div>
+            </div>
+               
+            <div class="mdc-list-item mdc-drawer-item">
+              <a class="mdc-expansion-panel-link" href="#" data-toggle="expansionPanel" data-target="submenu-candidat">
+                <i class="material-icons mdc-list-item__start-detail mdc-drawer-item-icon" aria-hidden="true">person</i>
+                Candidats
+                <i class="mdc-drawer-arrow material-icons">chevron_right</i>
+              </a>
+              <div class="mdc-expansion-panel" id="submenu-candidat">
+                <nav class="mdc-list mdc-drawer-submenu">
+                    
+                   
+                    <div class="mdc-list-item mdc-drawer-item">
+                        <a class="mdc-drawer-link" href="../candidature/listecandidat.html">
+                      Display Candidats
+                    </a>
+                  </div>
+                    <div class="mdc-list-item mdc-drawer-item">
+                        <a class="mdc-drawer-link" href="../candidature/candidat_1.html">
+                       Add Candidats
+                    </a>
+                  </div>
+                </nav>
+              </div>
+            </div>
+                          <div class="mdc-list-item mdc-drawer-item">
+              <a class="mdc-expansion-panel-link" href="#" data-toggle="expansionPanel" data-target="submenu-vote">
+                <i class="material-icons mdc-list-item__start-detail mdc-drawer-item-icon" aria-hidden="true">thumbs_up_down</i>
+                Polls
+                <i class="mdc-drawer-arrow material-icons">chevron_right</i>
+              </a>
+              <div class="mdc-expansion-panel" id="submenu-vote">
+                <nav class="mdc-list mdc-drawer-submenu">
+                 
+                  <div class="mdc-list-item mdc-drawer-item">
+                    <a class="mdc-drawer-link" href="../scrutin/vote.html">
+                      Vote
+                    </a>
+                  </div>
+                                    <div class="mdc-list-item mdc-drawer-item mdc-drawer-menu">
+                    <a class="mdc-drawer-link mdc-drawer-menu" href="#">
+                      Results <i class="mdc-drawer-arrow material-icons">chevron_right</i>
+                    </a>
+                          <nav class="mdc-list " id="menu-result" >
+                              <div class="mdc-list-item mdc-drawer-item">
+                                  <a class="mdc-drawer-link" href="../scrutin/resultats_presidentiel.html">
+                                      Presidentials
+                                  </a>
+                              </div>
+                               <div class="mdc-list-item mdc-drawer-item">
+                                  <a class="mdc-drawer-link" href="../scrutin/resultats_senatorial.html">
+                                      Senatorial
+                                  </a>
+                              </div> 
+                                <div class="mdc-list-item mdc-drawer-item">
+                                  <a class="mdc-drawer-link" href="../scrutin/resultats_deputation.html">
+                                      Deputation
+                                  </a>
+                              </div> 
+                          </nav>
+                     
+                  </div>
+                </nav>
+              </div>
+            </div>
+                
+            <div class="mdc-list-item mdc-drawer-item">
+              <a class="mdc-drawer-link" href="../statistiques/stats.html">
+                <i class="material-icons mdc-list-item__start-detail mdc-drawer-item-icon" aria-hidden="true">pie_chart_outlined</i>
+                Statistics
+              </a>
+            </div>
+                     <div class="mdc-list-item mdc-drawer-item">
+              <a class="mdc-expansion-panel-link" href="#" data-toggle="expansionPanel" data-target="submenu-settings">
+                <i class="material-icons mdc-list-item__start-detail mdc-drawer-item-icon" aria-hidden="true">settings</i>
+                Parameters
+                <i class="mdc-drawer-arrow material-icons">chevron_right</i>
+              </a>
+              <div class="mdc-expansion-panel" id="submenu-settings">
+                <nav class="mdc-list mdc-drawer-submenu">
+                    
+                  <div class="mdc-list-item mdc-drawer-item">
+                    <a class="mdc-drawer-link" href="../administration/adduser.html">
+                      Create Users
+                    </a>
+                  </div>
+                  <div class="mdc-list-item mdc-drawer-item">
+                    <a class="mdc-drawer-link" href="../administration/userlist.html">
+                      Display Users
+                    </a>
+                  </div>
+                  
+                </nav>
+              </div>
+            </div>
+          </nav>
+        </div>
+        <div class="profile-actions">
+          <a href="../../index.html">Log out</a>
+      
+      </div>
+    </aside>
+   
+    <!-- partial -->
+    <div class="main-wrapper mdc-drawer-app-content">
+      <!-- partial:../../partials/_navbar.html -->
+      <header class="mdc-top-app-bar">
+        <div class="mdc-top-app-bar__row">
+          <div class="mdc-top-app-bar__section mdc-top-app-bar__section--align-start">
+            <button class="material-icons mdc-top-app-bar__navigation-icon mdc-icon-button sidebar-toggler">menu</button>
+            <span class="mdc-top-app-bar__title">Let we know about you!</span>
+           
+          </div>
+          <div class="mdc-top-app-bar__section mdc-top-app-bar__section--align-end mdc-top-app-bar__section-right">
+            <div class="menu-button-container menu-profile d-none d-md-block">
+              <button class="mdc-button mdc-menu-button">
+                <span class="d-flex align-items-center">
+                  <span class="figure">
+                    <img src="../../images/001-man.png"  class="img-circle img-thumbnail bg-teal" alt="logo" Width="30" height="40">
+                  </span>
+                  <span class="user-name">Renald Dewar's</span>
+                </span>
+              </button>
+              <div class="mdc-menu mdc-menu-surface" tabindex="-1">
+                  <li class="mdc-list-item" role="menuitem">
+                    <div class="item-thumbnail item-thumbnail-icon-only">
+                      <i class="mdi mdi-settings-outline text-primary"></i>                      
+                    </div>
+                    <div class="item-content d-flex align-items-start flex-column justify-content-center">
+                        <h6 onclick="logout();" class="item-subject font-weight-normal">Logout</h6>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="divider d-none d-md-block"></div>
+           
+            <div class="menu-button-container">
+              <button class="mdc-button mdc-menu-button">
+                <i class="mdi mdi-bell"></i>
+              </button>
+              <div class="mdc-menu mdc-menu-surface" tabindex="-1">
+                <h6 class="title"> <i class="mdi mdi-bell-outline mr-2 tx-16"></i> Notifications</h6>
+                <ul class="mdc-list" role="menu" aria-hidden="true" aria-orientation="vertical">
+                    <li onclick="alert('Le doit de modifier la muniterie est accorder par l\'admin lors de votre enregistrement comme utilisateur dans module d\'access');" class="mdc-list-item" role="menuitem">
+                    <div class="item-thumbnail item-thumbnail-icon">
+                      <i class="mdi mdi-email-outline"></i>
+                    </div>
+                    <div class="item-content d-flex align-items-start flex-column justify-content-center">
+                      <h6 class="item-subject font-weight-normal">You have a new message</h6>
+                      <small class="text-muted"> 2 minutes </small>
+                    </div>
+                  </li>
+                   
+                  <li class="mdc-list-item" role="menuitem">
+                    <div class="item-thumbnail item-thumbnail-icon">
+                      <i class="mdi mdi-account-outline"></i>                      
+                    </div>
+                    <div class="item-content d-flex align-items-start flex-column justify-content-center">
+                      <h6 class="item-subject font-weight-normal">message</h6>
+                      <small class="text-muted">one hour ago</small>
+                    </div>
+                  </li>
+                   
+                 <!-- <li class="mdc-list-item" role="menuitem">
+                    <div class="item-thumbnail item-thumbnail-icon">
+                      <i class="mdi mdi-alert-circle-outline"></i>
+                    </div>
+                    <div class="item-content d-flex align-items-start flex-column justify-content-center">
+                      <h6 class="item-subject font-weight-normal">System Alert</h6>
+                      <small class="text-muted"> 1 days ago </small>
+                    </div>
+                  </li> -->
+                  
+                  <li class="mdc-list-item" role="menuitem">
+                    <div class="item-thumbnail item-thumbnail-icon">
+                      <i class="person"></i>
+                    </div>
+                    <div class="item-content d-flex align-items-start flex-column justify-content-center">
+                      <h6 class="item-subject font-weight-normal">message</h6>
+                      <small class="text-muted">a minute ago</small>
+                    </div>
+                  </li> 
+                 
+                </ul>
+              </div>
+            </div>
+            
+          </div>
+        </div>
+      </header>
+      <!-- partial -->
+      <div class="page-wrapper mdc-toolbar-fixed-adjust">
+        <main class="content-wrapper">
+         
+             <div class="container-fluid">
+                  
+                            
+                  <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                    <div class="card">
+                        <div class="header">
+                            
+                            <h2>USEFUL INFORMATION</h2>
+                            
+                        </div>
+                        <div class="body">
+                            
+                            <div class="row clearfix">
+                                <form target="upload" method="post" action="#" class="col-sm-4" enctype="multipart/form-data" id="myform">
+        
+                                    <div class="col-lg-6 col-md-10 col-sm-12 col-xs-12">
+                                       <div class='preview'>
+        
+            <img src="../../images/IMG_5377.PNG" id="img" width="120" height="120">
+             
+        </div> 
+                                    </div>
+        <div class="col-lg-6 col-md-2 col-sm-12 col-xs-12">
+               
+               <input type="file" accept="image/*" class="btn btn-link bg-grey" onchange="showPreview(event);"  id="file" name="file_name" />
+               <h1 id="progress"></h1>
+                  
+                  <div>
+                      
+          
+        </div>
+        </div>             
+         
+        
+      
+        <script>
+
+
+     
+
+        </script>
+        
+        
+    </form>
+                  <iframe style="display:none" name="upload"></iframe>
+</div>          
+             
+                  
+                  <form id="form_validation" action="#"  method="POST" >
+                               
+                               
+                                <input  type="text" id="pic" placeholder="Add a photo*"  name="picture" class="form-control" value="" readonly="true" required/>
+                                     
+                                <input type="text" id="myNipd" name="nipd" class="form-control" value="<%if(abm.getId()!=null){out.println(abm.getId());}else{}%>" readonly required/>   
+                                
+                                <div class="row clearfix">
+                                <div class="col-sm-6">
+                                    <div class="form-group">
+                                        <div class="form-line">
+                                            <input type="text" name="nom" class="form-control" placeholder="Firstname *" value="" required/>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-6">
+                                    <div class="form-group">
+                                        <div class="form-line">
+                                            <input type="text" name="prenom"  class="form-control" placeholder="Lastname *" value="" required/>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                                            <div class="row clearfix">
+                                                <div class="col-sm-6">
+                                                    <div class="form-group form-float">
+                                                        <div class="form-line">
+                                                            <input type="text" class="form-control"  id="nif" placeholder="Legal ID number*" pattern="[0-9]{3}-[0-9]{3}-[0-9]{3}-[0-9]{1}|[0-9]{10}" title="Format NIF : xxx-xxx-xxx-x ou NIU : xxxxxxxxxx" name="cinif" value="" required>
+                                                        </div>
+                                                        <small id="errorNif"  class=" text-danger"></small>
+                                                    </div>
+
+                                                </div>     
+                                                <div class="col-sm-6">  
+                                                    <div class="form-group">
+                                                        <div class="form-label">
+                                                            <label class="form-label">SEX :* </label>
+                                                            <input type="radio" name="gender" id="male" value="male" checked class="with-gap"> 
+                                                            <label for="male">Male</label>
+
+                                                            <input type="radio" name="gender" id="female" value="female" class="with-gap"> 
+                                                            <label for="female" class="m-l-20">Female</label>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                                            
+                                <div class="row clearfix">
+                                <div class="col-sm-6">
+                                    <div class="form-group">
+                                        <div class="form-label">
+                                        <label class="form-label">Birthdate *...</label>
+                                    </div>
+                                        <div class="form-line">
+                                            <input max="2003-01-01" type="date" class="form-control" name="birthdate" placeholder="Date de Naissance..." value="" required>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-6">
+                                    <div class="form-group form-float">
+                                        <div class="form-label">
+                                        <label class="form-label">Place of birth*... </label>
+                                    </div>
+                                        <div class="form-line">
+                                            <select class="form-control show-tick" name="bornhood" data-live-search="true" required>
+                                       
+                                      <option value="" required>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</option>
+                                              
+                                          </select>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                                <div class="form-group form-float">
+                                    <div class="form-line">
+                                        <input type="text" class="form-control" placeholder="Current address*" name="address" value="" required>
+                                    </div>
+                                </div>
+                                 <div class="row clearfix">
+                                <div class="col-sm-6">
+                                    <div class="form-group">
+                                        <div class="form-line">
+                                            <input type="tel" name="telephone" class="form-control" pattern="[0-9]{4}-[0-9]{2}-[0-9]{2}" title="Format : xxxx-xx-xx"  placeholder="Phone* (ex: 3300-01-01)" value="" required/>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-6">
+                                    <div class="form-group">
+                                        <div class="form-line">
+                                            <input type="mail" name="email" class="form-control" placeholder="Email" value="" />
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                                 <div class="row clearfix">
+                                <div class="col-sm-6">
+                                    <div class="form-group">
+                                        <div class="form-line">
+                                            <select name="statutmatrimoniale*" class="form-control show-tick" required>
+                                        <option value="">-- Matrimonial Status *--</option>
+                                        <option value="M">Divorced</option> 
+                                        <option value="M">Single</option>     
+                                      <option value="M">Married</option>
+                                              
+                                    </select>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-6">
+                                    <div class="form-group form-float">
+                                        <div class="form-line">
+                                            <input type="text" name="profession" class="form-control" placeholder="Profession" value="">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                                
+                                 <div class="row clearfix">
+                                <div class="col-sm-6">
+                                    <div class="form-group">
+                                        <div class="form-label">
+                                        <label class="form-label">Adhesion date*...</label>
+                                    </div>
+                                        <div class="form-line">
+                                            <input type="date" name="adhesiondate" class="form-control" max="2021-12-31" placeholder="Date d'adhesion au parti*..." required>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-6">
+                                    <div class="form-group form-float">
+                                        <div class="form-label">
+                                        <label class="form-label">--Member Status*--</label>
+                                    </div>
+                                        <div class="form-line">
+                                            <select id="statut" name="statutmembre" onchange="validate();" class="form-control show-tick" required>
+                                      
+                                                
+                                      <option value="u" required> Unique </option>
+                                      <option value="S" required> Simple </option>
+                                                <option value="Membre" required>Consellor</option> 
+                                            
+                                    </select>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                                
+                                <div class="form-group form-float">
+                                    <div class="form-line">
+                                        <textarea name="motif" cols="30" placeholder="Why you want to integrate the party*" rows="5" class="form-control no-resize"  required></textarea>
+                                    </div>
+                                </div>
+                               
+                                <div class="form-group">
+                                    <input type="checkbox" id="checkbox" name="agree" checked required>
+                                    <label for="checkbox">Member recognize to have read party charter and agreed to respect his rules and intern reglementations .</label>
+                                </div>
+                                    
+                                    <button class="btn btn-primary waves-effect"  id="btnSubmit">Soumettre</button>
+                                
+                               <!--  <script src="../../plugins/jquery/jquery.min.js"></script>-->
+                                 <script src="https://sdk.amazonaws.com/js/aws-sdk-2.357.0.min.js"></script>
+<script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+  <script src="../../js/s3uploader.js"></script>
+   <script src="../../plugins/jquery/jquery.min.js"></script>
+                                <script type="text/javascript">
+           
+          function validate(){
+             var ddl = document.getElementById("statut");
+ var selectedValue = ddl.options[ddl.selectedIndex].value;
+    if (selectedValue !== "Membre Conseil")
+   {
+   $('#post').addClass("hide");
+   $('#direction').prop("required",false);
+   }else{
+       $('#post').removeClass("hide");
+        $('#direction').prop("required",true);
+   }
+
+          }
+          
+            
+          function showPreview(event){
+         var picture = document.getElementById("pic");
+         var file = document.getElementById("file");
+            if(event.target.files.length>0){
+                var src = URL.createObjectURL(event.target.files[0]);
+                var preview = document.getElementById("img");
+                preview.src = src;
+                picture.value = file.files[0].name;
+                $('#myform').submit();
+              //s3upload();
+            }else{
+                picture.value = null;
+            }
+        } 
+          
+        $(document).ready(function(){
+            $('#nif').blur(function(){
+                $.ajax({
+                    url :'../../CheckNifServlet',
+                data : {
+                    ninif : $('#nif').val()
+                },
+                success : function(responseText){
+                    
+                    $('#errorNif').text(responseText);
+                    if($('#errorNif').html()!==""){
+                        $('#btnSubmit').prop("disabled",true);
+                    }else{
+                       $('#btnSubmit').prop("disabled",false); 
+                    }
+                }
+            }); 
+                });
+                
+                $('#form_validation').on('submit', function(){
+                    alert("Enregistrement nouveau membre reussit.");
+                });
+                 
+                var succeed = -1;
+                var error = -2
+                if(succeed === 0){
+                    alert("Enregistrement nouveau membre reussit.");
+                }else if(succeed===1){
+                     alert("Modification des informations du membre reussit.");
+                }
+                if(error ===3){
+                    alert("echec de l'enregistrement. poste de direction deja assigné");
+                }
+               
+        });
+          
+          
+          
+         
+           function showConfirmMessage() {
+           
+    swal({
+        title: "Etes-vous sure?",
+        text: "Ce membre sera definitivement supprimer si vous validez!",
+        type: "warning",
+        showCancelButton: true,
+        confirmButtonColor: "#DD6B55",
+        confirmButtonText: "Yes, Supprimer!",
+        closeOnConfirm: false
+    }, function (isConfirm) {
+             
+    });
+}
+
+       
+       </script>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+             </div>
+         
+        </main>
+        <!-- partial:../../partials/_footer.html -->
+        <footer>
+            <div class="mdc-layout-grid">
+              <div class="mdc-layout-grid__inner">
+                <div class="mdc-layout-grid__cell stretch-card mdc-layout-grid__cell--span-6-desktop">
+                  <span class="text-center text-sm-left d-block d-sm-inline-block tx-14">Copyright © <a href="https://www.bootstrapdash.com/" target="_blank">RomSoftware Group </a>2021</span>
+                </div>
+                <div class="mdc-layout-grid__cell stretch-card mdc-layout-grid__cell--span-6-desktop d-flex justify-content-end">
+                  <span class="float-none float-sm-right d-block mt-1 mt-sm-0 text-center tx-14">Projet <a href="https://www.bootstrapdash.com/material-design-dashboard/" target="_blank"> Fin D'etudes </a> Platform Politique Pitit Dessalines</span>
+                </div>
+              </div>
+            </div>
+          </footer>
+        <!-- partial -->
+      </div>
+    </div>
+  </div>
+  
+  
+  <!-- plugins:js -->
+  <script src="../assets/vendors/js/vendor.bundle.base.js"></script>
+  <!-- endinject -->
+  <!-- Plugin js for this page-->
+  <!-- End plugin js for this page-->
+  <!-- inject:js -->
+  <script src="../assets/js/material.js"></script>
+  <script src="../assets/js/misc.js"></script>
+  <!-- endinject -->
+  <!-- Custom js for this page-->
+  <!-- End custom js for this page-->
+</body>
+</html>

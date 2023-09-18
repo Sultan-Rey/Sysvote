@@ -1,0 +1,101 @@
+
+<!DOCTYPE html>
+<header class="mdc-top-app-bar">
+        <div class="mdc-top-app-bar__row">
+          <div class="mdc-top-app-bar__section mdc-top-app-bar__section--align-start">
+            <button class="material-icons mdc-top-app-bar__navigation-icon mdc-icon-button sidebar-toggler">menu</button>
+            <span class="mdc-top-app-bar__title">Bienvenue member!</span>
+           
+          </div>
+          <div class="mdc-top-app-bar__section mdc-top-app-bar__section--align-end mdc-top-app-bar__section-right">
+            <div class="menu-button-container menu-profile d-none d-md-block">
+              <button class="mdc-button mdc-menu-button">
+                <span class="d-flex align-items-center">
+                  <span class="figure">
+                    <img src="#"  class="img-circle img-thumbnail bg-teal" alt="logo" Width="30" height="40">
+                  </span>
+                  <span class="user-name">Jacques Braud</span>
+                </span>
+              </button>
+              <div class="mdc-menu mdc-menu-surface" tabindex="-1">
+                  <li class="mdc-list-item" role="menuitem">
+                    <div class="item-thumbnail item-thumbnail-icon-only">
+                      <i class="mdi mdi-settings-outline text-primary"></i>                      
+                    </div>
+                    <div class="item-content d-flex align-items-start flex-column justify-content-center">
+                        <h6 onclick="logout();" class="item-subject font-weight-normal">Logout</h6>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="divider d-none d-md-block"></div>
+           
+            <div class="menu-button-container">
+              <button class="mdc-button mdc-menu-button">
+                <i class="mdi mdi-bell"></i>
+              </button>
+              <div class="mdc-menu mdc-menu-surface" tabindex="-1">
+                <h6 class="title"> <i class="mdi mdi-bell-outline mr-2 tx-16"></i> Notifications</h6>
+                <ul class="mdc-list" role="menu" aria-hidden="true" aria-orientation="vertical">
+                    <li onclick="alert('Le doit de modifier la muniterie est accorder par l\'admin lors de votre enregistrement comme utilisateur dans module d\'access');" class="mdc-list-item" role="menuitem">
+                    <div class="item-thumbnail item-thumbnail-icon">
+                      <i class="mdi mdi-email-outline"></i>
+                    </div>
+                    <div class="item-content d-flex align-items-start flex-column justify-content-center">
+                      <h6 class="item-subject font-weight-normal">Vous Avez un nouveau message</h6>
+                      <small class="text-muted"> 2 minutes </small>
+                    </div>
+                  </li>
+                   
+                  <li class="mdc-list-item" role="menuitem">
+                    <div class="item-thumbnail item-thumbnail-icon">
+                      <i class="mdi mdi-account-outline"></i>                      
+                    </div>
+                    <div class="item-content d-flex align-items-start flex-column justify-content-center">
+                      <h6 class="item-subject font-weight-normal">message</h6>
+                      <small class="text-muted"> heure</small>
+                    </div>
+                  </li>
+                   
+                 <!-- <li class="mdc-list-item" role="menuitem">
+                    <div class="item-thumbnail item-thumbnail-icon">
+                      <i class="mdi mdi-alert-circle-outline"></i>
+                    </div>
+                    <div class="item-content d-flex align-items-start flex-column justify-content-center">
+                      <h6 class="item-subject font-weight-normal">System Alert</h6>
+                      <small class="text-muted"> 1 days ago </small>
+                    </div>
+                  </li> -->
+                  
+                  <li class="mdc-list-item" role="menuitem">
+                    <div class="item-thumbnail item-thumbnail-icon">
+                      <i class="<%=nmodel.getIcone()%>"></i>
+                    </div>
+                    <div class="item-content d-flex align-items-start flex-column justify-content-center">
+                      <h6 class="item-subject font-weight-normal">mesage</h6>
+                      <small class="text-muted">heure </small>
+                    </div>
+                  </li> 
+                 
+                </ul>
+              </div>
+            </div>
+            
+          </div>
+        </div>
+      </header>
+
+                <script type="text/javascript">
+                    function logout(){
+                       window.location.href = "../../index.jsp";
+                    }
+                    function redirectTo(page){
+                        if(page === 'settings'){
+                            window.location.href = "../administration/userlist.jsp";
+                        }
+                        else if(page === 'reload'){
+                            window.location.reload();
+                        }
+                    }
+                    </script>

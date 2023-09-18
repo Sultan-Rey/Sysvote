@@ -1,0 +1,581 @@
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>SYSVOTE | HOMEPAGE</title>
+  
+   <!-- plugins:css -->
+  <link rel="stylesheet" href="../assets/vendors/mdi/css/materialdesignicons.min.css">
+  <link rel="stylesheet" href="../assets/vendors/css/vendor.bundle.base.css">
+  <!-- endinject -->
+  <!-- Plugin css for this page -->
+  <!-- End plugin css for this page -->
+  <!-- Layout styles -->
+  <link rel="stylesheet" href="../assets/css/demo/style.css">
+    <!-- Bootstrap Core Css -->
+    <link href="../../plugins/bootstrap/css/bootstrap.css" rel="stylesheet">
+  <!-- Custom Css -->
+    <link href="../../css/style.css" rel="stylesheet">
+  <!-- End layout styles -->
+  <link rel="shortcut icon" href="../../images/favicon.png" />
+</head>
+<body>
+     
+<script src="../assets/js/preloader.js"></script>
+  <div class="body-wrapper">
+    <!-- partial:../../partials/_sidebar.html -->
+    <aside class="mdc-drawer mdc-drawer--dismissible mdc-drawer--open">
+      <div class="mdc-drawer__header">
+        <a href="../homepage/home.html" class="brand-logo">
+            <img src="../../images/001-man.png"  class="img-circle img-thumbnail bg-teal" alt="" Width="40" height="40">
+        </a>
+      </div>
+      <div class="mdc-drawer__content">
+          
+        <div class="user-info">
+          <p class="name">Renald Dewar's</p>
+          <p class="email">dewars@voter.com</p>
+        </div>
+        
+        <div class="mdc-list-group">
+          <nav class="mdc-list mdc-drawer-menu">
+            <div class="mdc-list-item mdc-drawer-item">
+              <a class="mdc-drawer-link" href="#">
+                <i class="material-icons mdc-list-item__start-detail mdc-drawer-item-icon" aria-hidden="true">home</i>
+                DASHBOARD
+              </a>
+            </div>
+        
+            <div class="mdc-list-item mdc-drawer-item">
+              <a class="mdc-expansion-panel-link" href="#" data-toggle="expansionPanel" data-target="submenu-member">
+                <i class="material-icons mdc-list-item__start-detail mdc-drawer-item-icon" aria-hidden="true">people</i>
+                Membership
+                <i class="mdc-drawer-arrow material-icons">chevron_right</i>
+              </a>
+              <div class="mdc-expansion-panel" id="submenu-member">
+                <nav class="mdc-list mdc-drawer-submenu">
+                    
+                  <div class="mdc-list-item mdc-drawer-item">
+                    <a class="mdc-drawer-link" href="../membre/enregistrermembre.html">
+                      Add members
+                    </a>
+                  </div>
+                 
+                    <div class="mdc-list-item mdc-drawer-item">
+                        <a class="mdc-drawer-link" href="../membre/partisan.html">
+                      Display members
+                    </a>
+                  </div>
+                </nav>
+              </div>
+            </div>
+                 
+               <div class="mdc-list-item mdc-drawer-item">
+              <a class="mdc-expansion-panel-link" href="#" data-toggle="expansionPanel" data-target="submenu-votant">
+                <i class="material-icons mdc-list-item__start-detail mdc-drawer-item-icon" aria-hidden="true">thumbs_up_down</i>
+                Voters
+                <i class="mdc-drawer-arrow material-icons">chevron_right</i>
+              </a>
+              <div class="mdc-expansion-panel" id="submenu-votant">
+                <nav class="mdc-list mdc-drawer-submenu">
+                  <div class="mdc-list-item mdc-drawer-item">
+                    <a class="mdc-drawer-link" href="../congregation/votant.html">
+                     Voters Accepted
+                    </a>
+                  </div>
+                  
+              </div>
+            </div>
+               
+            <div class="mdc-list-item mdc-drawer-item">
+              <a class="mdc-expansion-panel-link" href="#" data-toggle="expansionPanel" data-target="submenu-candidat">
+                <i class="material-icons mdc-list-item__start-detail mdc-drawer-item-icon" aria-hidden="true">person</i>
+                Candidats
+                <i class="mdc-drawer-arrow material-icons">chevron_right</i>
+              </a>
+              <div class="mdc-expansion-panel" id="submenu-candidat">
+                <nav class="mdc-list mdc-drawer-submenu">
+                    
+                   
+                    <div class="mdc-list-item mdc-drawer-item">
+                        <a class="mdc-drawer-link" href="../candidature/listecandidat.html">
+                      Display Candidats
+                    </a>
+                  </div>
+                    <div class="mdc-list-item mdc-drawer-item">
+                        <a class="mdc-drawer-link" href="../candidature/candidat_1.html">
+                       Add Candidats
+                    </a>
+                  </div>
+                </nav>
+              </div>
+            </div>
+                          <div class="mdc-list-item mdc-drawer-item">
+              <a class="mdc-expansion-panel-link" href="#" data-toggle="expansionPanel" data-target="submenu-vote">
+                <i class="material-icons mdc-list-item__start-detail mdc-drawer-item-icon" aria-hidden="true">thumbs_up_down</i>
+                Polls
+                <i class="mdc-drawer-arrow material-icons">chevron_right</i>
+              </a>
+              <div class="mdc-expansion-panel" id="submenu-vote">
+                <nav class="mdc-list mdc-drawer-submenu">
+                 
+                  <div class="mdc-list-item mdc-drawer-item">
+                    <a class="mdc-drawer-link" href="../scrutin/vote.html">
+                      Vote
+                    </a>
+                  </div>
+                                    <div class="mdc-list-item mdc-drawer-item mdc-drawer-menu">
+                    <a class="mdc-drawer-link mdc-drawer-menu" href="#">
+                      Results <i class="mdc-drawer-arrow material-icons">chevron_right</i>
+                    </a>
+                          <nav class="mdc-list " id="menu-result" >
+                              <div class="mdc-list-item mdc-drawer-item">
+                                  <a class="mdc-drawer-link" href="../scrutin/resultats_presidentiel.html">
+                                      Presidentials
+                                  </a>
+                              </div>
+                               <div class="mdc-list-item mdc-drawer-item">
+                                  <a class="mdc-drawer-link" href="../scrutin/resultats_senatorial.html">
+                                      Senatorial
+                                  </a>
+                              </div> 
+                                <div class="mdc-list-item mdc-drawer-item">
+                                  <a class="mdc-drawer-link" href="../scrutin/resultats_deputation.html">
+                                      Deputation
+                                  </a>
+                              </div> 
+                          </nav>
+                     
+                  </div>
+                </nav>
+              </div>
+            </div>
+                
+            <div class="mdc-list-item mdc-drawer-item">
+              <a class="mdc-drawer-link" href="../statistiques/stats.html">
+                <i class="material-icons mdc-list-item__start-detail mdc-drawer-item-icon" aria-hidden="true">pie_chart_outlined</i>
+                Statistics
+              </a>
+            </div>
+                     <div class="mdc-list-item mdc-drawer-item">
+              <a class="mdc-expansion-panel-link" href="#" data-toggle="expansionPanel" data-target="submenu-settings">
+                <i class="material-icons mdc-list-item__start-detail mdc-drawer-item-icon" aria-hidden="true">settings</i>
+                Parameters
+                <i class="mdc-drawer-arrow material-icons">chevron_right</i>
+              </a>
+              <div class="mdc-expansion-panel" id="submenu-settings">
+                <nav class="mdc-list mdc-drawer-submenu">
+                    
+                  <div class="mdc-list-item mdc-drawer-item">
+                    <a class="mdc-drawer-link" href="../administration/adduser.html">
+                      Create Users
+                    </a>
+                  </div>
+                  <div class="mdc-list-item mdc-drawer-item">
+                    <a class="mdc-drawer-link" href="../administration/userlist.html">
+                      Display Users
+                    </a>
+                  </div>
+                  
+                </nav>
+              </div>
+            </div>
+          </nav>
+        </div>
+       
+    </aside>
+    <!-- partial -->
+    <div class="main-wrapper mdc-drawer-app-content">
+      <!-- partial:../../partials/_navbar.html -->
+      <header class="mdc-top-app-bar">
+        <div class="mdc-top-app-bar__row">
+          <div class="mdc-top-app-bar__section mdc-top-app-bar__section--align-start">
+            <button class="material-icons mdc-top-app-bar__navigation-icon mdc-icon-button sidebar-toggler">menu</button>
+            <span class="mdc-top-app-bar__title">Welcome dear!</span>
+           
+          </div>
+          <div class="mdc-top-app-bar__section mdc-top-app-bar__section--align-end mdc-top-app-bar__section-right">
+            <div class="menu-button-container menu-profile d-none d-md-block">
+              <button class="mdc-button mdc-menu-button">
+                <span class="d-flex align-items-center">
+                  <span class="figure">
+                    <img src="../../images/001-man.png"  class="img-circle img-thumbnail bg-teal" alt="logo" Width="30" height="40">
+                  </span>
+                  <span class="user-name">Renald Dewar's</span>
+                </span>
+              </button>
+              <div class="mdc-menu mdc-menu-surface" tabindex="-1">
+                  <li class="mdc-list-item" role="menuitem">
+                    <div class="item-thumbnail item-thumbnail-icon-only">
+                      <i class="mdi mdi-settings-outline text-primary"></i>                      
+                    </div>
+                    <div class="item-content d-flex align-items-start flex-column justify-content-center">
+                        <h6 onclick="logout();" class="item-subject font-weight-normal">Logout</h6>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="divider d-none d-md-block"></div>
+           
+            <div class="menu-button-container">
+              <button class="mdc-button mdc-menu-button">
+                <i class="mdi mdi-bell"></i>
+              </button>
+              <div class="mdc-menu mdc-menu-surface" tabindex="-1">
+                <h6 class="title"> <i class="mdi mdi-bell-outline mr-2 tx-16"></i> Notifications</h6>
+                <ul class="mdc-list" role="menu" aria-hidden="true" aria-orientation="vertical">
+                    <li onclick="alert('Le doit de modifier la muniterie est accorder par l\'admin lors de votre enregistrement comme utilisateur dans module d\'access');" class="mdc-list-item" role="menuitem">
+                    <div class="item-thumbnail item-thumbnail-icon">
+                      <i class="mdi mdi-email-outline"></i>
+                    </div>
+                    <div class="item-content d-flex align-items-start flex-column justify-content-center">
+                      <h6 class="item-subject font-weight-normal">You have a new message</h6>
+                      <small class="text-muted"> 2 minutes </small>
+                    </div>
+                  </li>
+                   
+                  <li class="mdc-list-item" role="menuitem">
+                    <div class="item-thumbnail item-thumbnail-icon">
+                      <i class="mdi mdi-account-outline"></i>                      
+                    </div>
+                    <div class="item-content d-flex align-items-start flex-column justify-content-center">
+                      <h6 class="item-subject font-weight-normal">message</h6>
+                      <small class="text-muted">one hour ago</small>
+                    </div>
+                  </li>
+                   
+                 <!-- <li class="mdc-list-item" role="menuitem">
+                    <div class="item-thumbnail item-thumbnail-icon">
+                      <i class="mdi mdi-alert-circle-outline"></i>
+                    </div>
+                    <div class="item-content d-flex align-items-start flex-column justify-content-center">
+                      <h6 class="item-subject font-weight-normal">System Alert</h6>
+                      <small class="text-muted"> 1 days ago </small>
+                    </div>
+                  </li> -->
+                  
+                  <li class="mdc-list-item" role="menuitem">
+                    <div class="item-thumbnail item-thumbnail-icon">
+                      <i class="person"></i>
+                    </div>
+                    <div class="item-content d-flex align-items-start flex-column justify-content-center">
+                      <h6 class="item-subject font-weight-normal">message</h6>
+                      <small class="text-muted">a minute ago</small>
+                    </div>
+                  </li> 
+                 
+                </ul>
+              </div>
+            </div>
+            
+          </div>
+        </div>
+      </header>
+     
+      <!-- partial -->
+      <div class="page-wrapper mdc-toolbar-fixed-adjust">
+        <main class="content-wrapper">
+                                            
+<div class="container-fluid">
+            <div class="block-header">
+                <h2>DASHBOARD</h2>
+            </div>
+
+            <!-- Widgets -->
+            <div class="row clearfix">
+                <a href="../administration/userlist.html">
+                 <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+                    <div class="info-box bg-pink hover-expand-effect">
+                        <div class="icon">
+                            <i class="material-icons">group</i>
+                        </div>
+                        <div class="content">
+                            <div class="text">USERS</div>
+                            <div class="number count-to" data-from="0" data-to="12" data-speed="1000" data-fresh-interval="60"></div>
+                        </div>
+                    </div>
+                </div>   
+                </a>
+                
+                        <a href="../candidature/listecandidat.html">
+                            <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+                    <div class="info-box bg-cyan hover-expand-effect">
+                        <div class="icon">
+                            <i class="material-icons">pan_tool</i>
+                        </div>
+                        <div class="content">
+                            <div class="text">CANDIDATS</div>
+                            <div class="number count-to" data-from="0" data-to="96" data-speed="1000" data-fresh-interval="20"></div>
+                        </div>
+                    </div>
+                </div>
+                        </a>
+                
+                        <a href="../congregation/votant.html">
+                           <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+                    <div class="info-box bg-light-green hover-expand-effect">
+                        <div class="icon">
+                            <i class="material-icons">thumbs_up_down</i>
+                        </div>
+                        <div class="content">
+                            <div class="text">VOTERS</div>
+                            <div class="number count-to" data-from="0" data-to="118" data-speed="1000" data-fresh-interval="20"></div>
+                        </div>
+                    </div>
+                </div> 
+                        </a>
+                
+                        <a href="../membre/enregistrermembre.html">
+                            <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+                    <div class="info-box bg-orange hover-expand-effect">
+                        <div class="icon">
+                            <i class="material-icons">person_add</i>
+                        </div>
+                        <div class="content">
+                            <div class="text">MEMBERS</div>
+                            <div class="number count-to" data-from="0" data-to="207" data-speed="1000" data-fresh-interval="20"></div>
+                        </div>
+                    </div>
+                </div>
+                        </a>
+                
+            </div>
+           <div class="mdc-layout-grid__cell stretch-card mdc-layout-grid__cell--span-12">
+                <div class="mdc-card">
+                  <div class="d-flex justify-content-between">
+                      <h4 class="card-title mb-0">Connected Influent Member</h4>
+                    <div>
+                        <i class="material-icons refresh-icon">refresh</i>
+                    </div>
+                  </div>
+                  <div class="d-block d-sm-flex justify-content-between align-items-center">
+                      <h5 class="card-sub-title mb-2 mb-sm-0">Record of executive members presence </h5>
+                      <div class="menu-button-container">
+                        <button    class="mdc-button mdc-menu-button mdc-button--raised button-box-shadow tx-12 text-dark bg-white font-weight-light">
+                            Set Timer
+                          <i class="material-icons">arrow_drop_down</i>
+                        </button>
+                        <div class="mdc-menu mdc-menu-surface" tabindex="-1">
+                          <ul class="mdc-list" role="menu" aria-hidden="true" aria-orientation="vertical">
+                            <li id="start" class="mdc-list-item" role="menuitem">
+                                <h6 class="item-subject font-weight-normal">Start</h6>
+                            </li>
+                            <li id="stop" class="mdc-list-item" role="menuitem">
+                              <h6  class="item-subject font-weight-normal">Stop</h6>
+                            </li>
+                            <li class="mdc-list-divider"></li>
+                            <li id="init" class="mdc-list-item" role="menuitem">
+                              <h6  class="item-subject font-weight-normal">Reset...</h6>
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                  </div>
+                  <div class="mdc-layout-grid__inner mt-2">
+                    <div class="mdc-layout-grid__cell mdc-layout-grid__cell--span-6 mdc-layout-grid__cell--span-8-tablet">
+                        <div class="table-responsive">
+                          <table class="table dashboard-table">
+                              <thead>
+                                  <tr>
+                                      <td>POSITION</td>
+                                      <td>Last presence</td>
+                                      <td>Status</td>
+                                  </tr>
+                              </thead>
+                            <tbody>
+                                  <tr>
+                                <td>
+                                  <span class="flag-icon-container"><i class="flag-icon flag-icon-us mr-2"></i></span>Coordonateur nationale</td>
+                                <td></td>
+                                <td class=" font-weight-medium">Online</td>
+            
+                              </tr>
+                               <tr>
+                                <td>
+                                  <span class="flag-icon-container"><i class="flag-icon flag-icon-us mr-2"></i></span>Secretaire generale</td>
+                                <td></td>
+                                 <td class=" font-weight-medium">Online </td>
+                              </tr>
+                                <tr>
+                                <td>
+                                  <span class="flag-icon-container"><i class="flag-icon flag-icon-us mr-2"></i></span>Porte-parole</td>
+                                <td></td>
+                                <td class=" font-weight-medium">Offline </td>
+                              </tr>
+                              <tr>
+                                <td>
+                                    <span class="flag-icon-container"><i class="flag-icon flag-icon-us mr-2"></i></span>Premier Delegu&eacute;</td>
+                                 <td></td>
+                                <td class=" font-weight-medium">Offline </td>
+                              </tr>
+                             
+                             
+                             
+                            </tbody>
+                          </table>
+                        </div>
+                    </div>
+                    <div class="mdc-layout-grid__cell mdc-layout-grid__cell--span-6 mdc-layout-grid__cell--span-8-tablet"> 
+                        <div id="demo" class="tx-12 text-muted pull-right m-t-10">Definissez l'heure de deroulement du scrutin</div>
+                        <div class="align-center m-t-40">
+                            <button class="btn btn-default" style="border-bottom: 1px solid red;">
+                                <div id="hr" style="font-size:22px;" class="badge">00</div><span>HRS</span>
+                            </button>
+                            <button class="btn btn-default" style="border-bottom: 1px solid red;">
+                                <div>
+                                    <div id="min" style="font-size:22px;" class="badge">00</div><span>MIN</span> 
+                                </div>
+                            </button>
+                            <button class="btn btn-default" style="border-bottom: 1px solid red;">
+                                <div id="sec" style="font-size:22px;" class="badge">59</div><span>SEC</span>
+                            </button>
+                        </div>
+                    </div>
+                  </div>
+                </div> 
+              </div>
+            </div>
+        </main>
+        <!-- partial:../../partials/_footer.html -->
+        <footer>
+          <div class="mdc-layout-grid">
+            <div class="mdc-layout-grid__inner">
+              <div class="mdc-layout-grid__cell stretch-card mdc-layout-grid__cell--span-6-desktop">
+                <span class="text-center text-sm-left d-block d-sm-inline-block tx-14">Copyright © <a href="https://www.bootstrapdash.com/" target="_blank">RomSoftware Group </a>2021</span>
+              </div>
+              <div class="mdc-layout-grid__cell stretch-card mdc-layout-grid__cell--span-6-desktop d-flex justify-content-end">
+                <span class="float-none float-sm-right d-block mt-1 mt-sm-0 text-center tx-14">Projet <a href="https://www.bootstrapdash.com/material-design-dashboard/" target="_blank"> Fin D'etudes </a> Platform Politique Pitit Dessalines</span>
+              </div>
+            </div>
+          </div>
+        </footer>
+         
+        <!-- partial -->
+      </div>
+    </div>
+  </div>
+        
+        
+
+        
+                                    
+                                     <!-- plugins:js -->
+  <script src="../assets/vendors/js/vendor.bundle.base.js"></script>
+  <!-- endinject -->
+  <!-- Plugin js for this page-->
+  <!-- End plugin js for this page-->
+  <!-- inject:js -->
+  <script src="../assets/js/material.js"></script>
+  <script src="../assets/js/misc.js"></script>
+  <!-- endinject -->
+  <!-- Custom js for this page-->
+  <!-- End custom js for this page-->
+  
+                       
+
+   
+
+   
+    
+  
+           <!-- Jquery Core Js -->
+    <script src="../../plugins/jquery/jquery.min.js"></script>
+    <script src="../../js/countdown.js">// Set the date we're counting down to</script>
+<script>
+            $("#start").click(function(){
+              localStorage.setItem("countdown", 1);
+            });
+            
+             $("#init").click(function(){
+                localStorage.removeItem("countdown");
+            });
+            $(document).ready(function(){
+             var countDownDate = localStorage.getItem("countdown");
+
+               if(countDownDate == 1){
+                    var x;
+ 
+     // Get today's date and time
+  var now = new Date().getTime(); 
+    
+var countDownDate = now + (60*60*24*1000);
+// Update the count down every 1 second
+ x = setInterval(function() {
+  var currentTime = new Date().getTime(); 
+ 
+  // Find the distance between now and the count down date
+  var distance = countDownDate - currentTime ;
+  
+  // Time calculations for days, hours, minutes and seconds
+  var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+  var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+  var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+  var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+  // Display the result in the element with id="demo"
+     document.getElementById("hr").innerHTML = hours; 
+     document.getElementById("min").innerHTML = minutes;
+     document.getElementById("sec").innerHTML = seconds;
+
+
+    
+  // If the count down is finished, write some text
+  if (distance <= 0) {
+    clearInterval(x);
+
+    document.getElementById("msg").innerHTML = "";
+      var fromNow = new Date(Date.now());
+                var dateformat = fromNow.getFullYear()+'-'+(fromNow.getMonth()+1)+'-'+fromNow.getDate();
+ 
+      }
+ 
+}, 1000);
+    
+                    
+                }else{
+                  document.getElementById("hr").innerHTML = "00"; 
+     document.getElementById("min").innerHTML = "00";
+     document.getElementById("sec").innerHTML = "59";
+                }
+            }); 
+            
+            </script>
+            
+                 
+    <!-- Bootstrap Core Js -->
+    <script src="../../plugins/bootstrap/js/bootstrap.js"></script>
+
+    <!-- Select Plugin Js -->
+    <script src="../../plugins/bootstrap-select/js/bootstrap-select.js"></script>
+
+    <!-- Slimscroll Plugin Js -->
+    <script src="../../plugins/jquery-slimscroll/jquery.slimscroll.js"></script>
+
+    <!-- Waves Effect Plugin Js -->
+    <script src="../../plugins/node-waves/waves.js"></script>
+
+    <!-- Jquery CountTo Plugin Js -->
+    <script src="../../plugins/jquery-countto/jquery.countTo.js"></script>
+
+    <!-- Morris Plugin Js -->
+    <script src="../../plugins/raphael/raphael.min.js"></script>
+    <script src="../../plugins/morrisjs/morris.js"></script>
+
+    <!-- ChartJs -->
+    <script src="../../plugins/chartjs/Chart.bundle.js"></script>
+
+
+   <!-- Custom Js -->
+    <script src="../../js/admin.js"></script>
+    <script src="../../js/pages/index.js"></script>
+
+    <!-- Demo Js -->
+    <script src="../../js/demo.js"></script>
+</body>
+</html>

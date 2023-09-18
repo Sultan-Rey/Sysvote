@@ -1,2 +1,0 @@
-# Sysvote
-Electronic vote system
