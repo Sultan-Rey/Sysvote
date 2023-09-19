@@ -57,7 +57,7 @@
             
                    
      
-             <form onsubmit="voteForm();" method="POST">
+             <form onsubmit="voteForm();" method="get">
       <div class="form-item log-in">
           
         <div id="member" class="table">
@@ -71,7 +71,7 @@
         </div>
       </div>
                   </form>
-             <form onsubmit="adminForm();" method="POST">
+             <form onsubmit="adminForm();" method="get">
                 <div class="form-item sign-up">
         <div class="table">
           <div  class="table-cell">
@@ -108,7 +108,7 @@
              
               if(user.value =='admin' && pass.value=='pass'){
                 //localStorage.setItem("logvote",0);
-                  alert('ok');
+                  
                    window.location="../Sysvote/pages/homepage/home.html"
               }else{
                 alert('Password or username invalid. please retry');
