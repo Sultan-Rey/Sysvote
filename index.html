@@ -117,7 +117,7 @@
                 
                      var countDownDate = localStorage.getItem("countdown");
              var logvote = localStorage.getItem("logvote");
-                  if(logvote !==1 && logvote!==0){
+                  if(logvote !==1 || logvote!==0){
               window.confirm("To connect as voters use credential : [ID : 123456 | Access code : vote] To connect as system admin use : [Username : admin | Password : pass]  **CASE SENSITIVE**");
                  }
                   if(logvote ==1){
