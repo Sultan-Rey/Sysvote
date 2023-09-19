@@ -117,9 +117,7 @@
                 
                      var countDownDate = localStorage.getItem("countdown");
              var logvote = localStorage.getItem("logvote");
-                  if(logvote !==1 || logvote!==0){
-              window.confirm("To connect as voters use credential : [ID : 123456 | Access code : vote] To connect as system admin use : [Username : admin | Password : pass]  **CASE SENSITIVE**");
-                 }
+                  
                   if(logvote ==1){
                     window.location="../Sysvote/pages/scrutin/vote.html";
                   }else if(logvote==0){
@@ -176,6 +174,9 @@ var countDownDate = now + (60*60*24*1000);
             }); 
           </script>
  <script src="js/js_one.js"></script>
-  
+  <footer>
+      <div class="alert alert-info"><h6>To connect as voters use credential : [ID : 123456 | Access code : vote] To connect as system admin use : [Username : admin | Password : pass]  **CASE SENSITIVE**
+</h6></div>
+  </footer>
     </body>
 </html>
