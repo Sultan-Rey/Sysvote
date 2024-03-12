@@ -106,7 +106,7 @@
               var user = document.getElementById("usr");
               var pass= document.getElementById("pwd");
              
-              if(user.value =='admin' && pass.value=='pass'){
+              if(trim(user.value) =='admin' && trim(pass.value)=='pass'){
                 localStorage.setItem("logvote",0);
                    window.location="../Sysvote/pages/homepage/home.html"
               }else{
